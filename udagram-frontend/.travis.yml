@@ -1,0 +1,6 @@
+
+
+- docker build -t udagram-frontend ./udagram-frontend
+- docker tag udagram-frontend chuong1602/udagram-frontend:v1
+- echo "vanchuong@2111" | docker login -u "chuong1602" --password-stdin
+- docker push chuong1602/udagram-frontend:v1

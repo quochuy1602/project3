@@ -1,0 +1,5 @@
+
+- docker build -t udagram-reverseproxy ./udagram-reverseproxy
+- docker tag udagram-reverseproxy chuong1602/udagram-reverseproxy:v1
+- echo "vanchuong@2111" | docker login -u "chuong1602" --password-stdin
+- docker push chuong1602/udagram-reverseproxy:v1
