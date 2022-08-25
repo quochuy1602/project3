@@ -33,11 +33,11 @@ script:
   - docker tag udagram-frontend chuong1602/udagram-frontend:v2
   # Build and tag reverseproxy
   - docker build -t udagram-reverseproxy ./udagram-reverseproxy
-  - docker tag udagram-reverseproxy chuong1602/udagram-reverseproxy:v1
+  - docker tag udagram-reverseproxy chuong1602/udagram-reverseproxy:v2
 
 after_success:
   - echo vanchuong@2111 | docker login -u chuong1602 --password-stdin
   - docker push chuong1602/udagram-api-feed:v2
   - docker push chuong1602/udagram-api-user:v2
   - docker push chuong1602/udagram-frontend:v2
-  - docker push chuong1602/udagram-reverseproxy:v1
+  - docker push chuong1602/udagram-reverseproxy:v2
