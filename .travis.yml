@@ -37,7 +37,7 @@ script:
 
 after_success:
   - echo vanchuong@2111 | docker login -u chuong1602 --password-stdin
-  - docker push chuong1602/udagram-api-feed:v1
-  - docker push chuong1602/udagram-api-user:v1
-  - docker push chuong1602/udagram-frontend:v1
+  - docker push chuong1602/udagram-api-feed:v2
+  - docker push chuong1602/udagram-api-user:v2
+  - docker push chuong1602/udagram-frontend:v2
   - docker push chuong1602/udagram-reverseproxy:v1
