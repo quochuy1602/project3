@@ -16,7 +16,7 @@ spec:
     spec:
       serviceAccountName: default-sa
       containers:
-        - image: chuong1602/udagram-api-feed:v2
+        - image: chuong1602/udagram-api-feed:v3
           ports:
           - containerPort: 8080
           name: backend-feed
