@@ -16,17 +16,17 @@ spec:
     spec:
       serviceAccountName: default-sa
       containers:
-        - image: chuong1602/udagram-api-user:v1
+        - image: chuong1602/udagram-api-user:v2
           ports:
           - containerPort: 8080
           name: backend-user
           resources:
             requests:
-              memory: "64Mi"
-              cpu: "250m"
-            limits:
               memory: "1024Mi"
-              cpu: "500m"
+              cpu: "300m"
+            limits:
+              memory: "1800Mi"
+              cpu: "400m"
           env:
             - name: URL
               valueFrom:

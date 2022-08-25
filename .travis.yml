@@ -24,10 +24,10 @@ script:
 
   # Build and tag api-feed
   - docker build -t udagram-api-feed ./udagram-api-feed
-  - docker tag udagram-api-feed chuong1602/udagram-api-feed:v1
+  - docker tag udagram-api-feed chuong1602/udagram-api-feed:v2
   # Build and tag api-user
   - docker build -t udagram-api-user ./udagram-api-user
-  - docker tag udagram-api-user chuong1602/udagram-api-user:v1
+  - docker tag udagram-api-user chuong1602/udagram-api-user:v2
   # Build and tag udagram-frontend
   - docker build -t udagram-frontend ./udagram-frontend
   - docker tag udagram-frontend chuong1602/udagram-frontend:v2
