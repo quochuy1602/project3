@@ -30,7 +30,7 @@ script:
   - docker tag udagram-api-user chuong1602/udagram-api-user:v1
   # Build and tag udagram-frontend
   - docker build -t udagram-frontend ./udagram-frontend
-  - docker tag udagram-frontend chuong1602/udagram-frontend:v1
+  - docker tag udagram-frontend chuong1602/udagram-frontend:v2
   # Build and tag reverseproxy
   - docker build -t udagram-reverseproxy ./udagram-reverseproxy
   - docker tag udagram-reverseproxy chuong1602/udagram-reverseproxy:v1
