@@ -21,12 +21,12 @@ spec:
           - containerPort: 8080
           name: backend-feed
           resources:
-            requests:
-              memory: "1024Mi"
-              cpu: "300m"
+             requests:
+              memory: "64Mi"
+              cpu: "250m"
             limits:
-              memory: "1800Mi"
-              cpu: "400m"
+              memory: "1024Mi"
+              cpu: "500m"
           env:
             - name: URL
               valueFrom:
