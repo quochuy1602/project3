@@ -16,7 +16,7 @@ spec:
     spec:
       serviceAccountName: default-sa
       containers:
-        - image: chuong1602/udagram-reverseproxy:v3
+        - image: chuong1602/udagram-reverseproxy:v5
           name: reverseproxy
           resources:
             requests:
